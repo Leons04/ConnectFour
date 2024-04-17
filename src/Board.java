@@ -39,7 +39,9 @@ public class Board {
     }
 
 
-
+    public int getColorIntFromMoveRight(){
+        return yellowToTurn ? YELLOW : RED;
+    }
 
 
 }
