@@ -8,8 +8,7 @@ public class MoveMaker {
     }
 
     public static int getColorIntFromMoveRight(Board board){
-        if (board.yellowToTurn) return 1;
-        else return 2;
+        return board.yellowToTurn ? Board.YELLOW : Board.RED;
     }
 
     public static void undoMove(Board board, int column){
