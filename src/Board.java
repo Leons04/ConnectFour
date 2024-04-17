@@ -8,6 +8,10 @@ public class Board {
     //Zeile 0 ist die unterste Zeile -> Aufpassen beim Drucken
     public int[][] squares;
 
+    //Höhe und Breite
+    public static final int HEIGHT = 6;
+    public static final int WIDHT = 7;
+
     //mögliche Einträge in squares
     public static final int YELLOW = 1;
     public static final int RED = 2;
@@ -15,7 +19,7 @@ public class Board {
 
     public Board(){
         yellowToTurn = true;
-        squares = new int[6][7];
+        squares = new int[HEIGHT][WIDHT];
     }
 
     public void clear(){
