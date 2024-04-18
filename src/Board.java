@@ -46,4 +46,12 @@ public class Board {
     }
 
 
+    // Darsstellung des Brettes im String Format
+    //Zur Ausgabe auf dr Konsole
+    public String toString(){
+        //@TODO: implement
+        return null;
+    }
+
+
 }
