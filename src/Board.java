@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class Board {
 
     //gibt an, welcher Spieler den nächsten Zug machen darf
@@ -24,12 +26,12 @@ public class Board {
 
     public void clear(){
         for(int line = 0; line < 6; line++){
-            for(int column = 0; column < 7; column++) squares[line][column] = FREE;
+            Arrays.fill(squares[line], FREE);
         }
     }
 
     public boolean columnIsFull(int column){
-        return squares[5][column] > 0;
+        return squares[5][column] != FREE;
     }
 
     public boolean isFull(){
@@ -39,7 +41,17 @@ public class Board {
     }
 
 
+    public int getColorIntFromMoveRight(){
+        return yellowToTurn ? YELLOW : RED;
+    }
 
+
+    // Darsstellung des Brettes im String Format
+    //Zur Ausgabe auf dr Konsole
+    public String toString(){
+        //@TODO: implement
+        return null;
+    }
 
 
 }

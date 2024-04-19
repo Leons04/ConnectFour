@@ -15,4 +15,13 @@ public class MoveGenerator {
     }
 
 
+
+    //Spiel ist vorbei wenn man keine legalen Züge mehr hat
+    //diese Methode tut genau dasselbe wie isFull() in Board, allersings
+    //macht es aus Perfmancegründen Sinn diese Methode zu verwenden
+    public static boolean gameOver(ArrayList <Integer> legalMoves){
+        return legalMoves.size() == 0;
+    }
+
+
 }
